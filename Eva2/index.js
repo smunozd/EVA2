@@ -66,12 +66,19 @@ location.reload();
 }//fin funcion
 
 function eliminar(id){
+    if (window.confirm("Desea eliminar el registro?") == true)
+    {
     db.collection("eva2").doc(id).delete().then(function() {
         console.log("Document successfully deleted!");
         location.reload();
     }).catch(function(error) {
         console.error("Error removing document: ", error);
-    });
+    });}
+    else
+    {
+       alert("Cancelado");
+      
+    }
 } //fin funcion
 
  function verDatos(){
