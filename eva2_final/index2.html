@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">                
+<meta charset="UTF=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--Enlaces firestore-->
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+<!--fin enlaces firestore-->
+<title>Document</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+        
+  <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Mis Momentos de Ocio</a>
+                  <ul class="right hide-on-med-and-down">
+                   
+                  </ul>
+                </div>
+              </nav>
+<!--Ejemplo 1-->
+
+
+        <div class="row">
+                <div class="col s3"><button class="btn btn-info" id="botonFondo" onclick="verFondos()">Fondos Pantalla</button><br>
+                </div>
+                <div class="col s6">
+                        <h3>Ingresa tus aplicaciones</h3>
+                        <label for="Nombre">Nombre </label>
+                        <input placeholder="Nombre" id="Nombre" type="text" class="validate"><br>
+                        <label for="Categoria">Categoria </label>
+                        <input placeholder="Categoria" id="Categoria" type="text" class="validate"><br> 
+                        <label for="Tipo">Tipo </label>
+                        <input placeholder="Tipo" id="Tipo" type="text" class="validate">
+                        <br>
+                        <label for="Plataforma">Plataforma </label>
+                        <input placeholder="Plataforma" id="Plataforma" type="text" class="validate">
+                        <br>
+                        <label for="Descripcion">Descripcion </label>
+                        <input placeholder="Descripcion" id="Descripcion" type="text" class="validate">
+                        <br>
+                        <label for="Ubicacion">Ubicacion </label>
+                        <input placeholder="Ubicacion" id="Ubicacion" type="text" class="validate">
+                        <br>
+                        <label for="Estado">Estado </label>
+                        <input placeholder="Estado" id="Estado" type="text" class="validate"><br></div>
+                </div> 
+                <div class="row">
+                        <div class="col s3">
+                        </div>
+                        <div class="col s6"> 
+                                <button class="btn btn-info" id="botonSave" onclick="agregarDatos()">Guardar Datos</button><br>
+                        </div>
+                <!-- <button class="btn btn-info" id="botonFondo" onclick="verFondos()">Fondos Pantalla</button><br> -->
+                </div>
+                <div class="row">
+                        <div class="col s3">
+                        </div> 
+                        <div class="col s6">
+                                <table class="table">
+                                        <thead class="thead-dark">
+                                                <tr >
+                                                        <th scope="col" class="striped">#</th>
+                                                        <th scope="col">Nombre</th>
+                                                        <th scope="col">Categoria</th>
+                                                        <th scope="col">Tipo</th>
+                                                        <th scope="col">Plataforma</th>
+                                                        <th scope="col">Descripcion</th>
+                                                        <th scope="col">Ubicacion</th>
+                                                        <th scope="col">Estado</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody id='tabla'>
+                                        </tbody>
+                                </table>       
+                        </div>
+              
+                </div>
+        </div>        
+
+<script src="js/index2.js"></script>
+
+</body>
+</html>

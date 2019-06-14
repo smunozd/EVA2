@@ -1,0 +1,22 @@
+img {
+margin:10px;
+}
+
+.progress-bar{
+    width: 0%;
+}
+
+
+ 
+table.striped > tbody > tr:nth-child(odd) {
+ 
+  background-color: rgba(170, 213, 213, 0.5);
+ 
+}
+ 
+
+body {
+    
+    background: #00809a
+    ;
+}
