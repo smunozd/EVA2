@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+                
+<meta charset="UTF=8">
+<title>Fondos Pantalla</title>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                <!-- imagenes-->
+                <div id="imagenes-de-firebase">
+
+                </div>
+                </div>
+                <div class="col-sm-4">
+                <form id="form-imagenes">
+                <label class="btn btn-file">
+                <input type="file" name="fichero" value="" id="fichero" class="hidden">
+                <img width="100" class="img-thumbnail" src="img/upload.png" class="img-responsive" alt="descargar">
+                </label>
+                </form>
+                <div class="hidden" id="progreso">
+                 <div class="progress">
+                     <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100" id="barra-de-progreso">
+                    <span class="sr-only">70 % Complete</span>
+                    </div>
+                 </div>
+                </div>   
+                </div>
+                </div>
+                </div>
+                <button class="btn btn-info" id="botonVolver" onclick="volver()">Volver a Base Datos</button><br>
+                <script>
+                function volver(){
+                    window.location.href="index2.html";  
+                }
+                </script>   
+                
+                <script src="js/fondos.js"></script>
+            </body>
+                
+    </html>
