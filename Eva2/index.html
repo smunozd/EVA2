@@ -1,59 +1,64 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<meta charset="UTF=8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
                 
 <meta charset="UTF=8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!--Enlaces firestore-->
+<!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script> -->
+<!--fin enlaces firestore-->
+<title>Login</title>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-<!--fin enlaces firestore-->
-<title>Document</title>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<!-- <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCqyvlYp_VUynJ8TQOZcfQvIIBj02bgz_k",
+    authDomain: "eva2-cristian-loyola.firebaseapp.com",
+    databaseURL: "https://eva2-cristian-loyola.firebaseio.com",
+    storageBucket: "eva2-cristian-loyola.appspot.com",
+    messagingSenderId: "184632134234",
+    appId: "1:184632134234:web:524a253b2247ebdb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script> -->
+
 </head>
 <body>
-<!--Ejemplo 1-->
-<!-- <div class="row">
-        <form class="col s12"> -->
-<input type="text" placeholder="Nombre" id="Nombre"><br>
-<input type="text" placeholder="Categoria" id="Categoria"><br>
-<input type="text" placeholder="Tipo" id="Tipo"><br>
-<input type="text" placeholder="Plataforma" id="Plataforma"><br>
-<input type="text" placeholder="Descripcion" id="Descripcion"><br>
-<input type="text" placeholder="Ubicacion" id="Ubicacion"><br>
-<input type="text" placeholder="Estado" id="Estado"><br>
-<!-- </div> -->
-
-<button class="btn btn-info" id="botonSave" onclick="agregarDatos()">Guardar Datos</button><br>
-
-<div>
-        <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Categoria</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Plataforma</th>
-                    <th scope="col">Descripcion</th>
-                    <th scope="col">Ubicacion</th>
-                    <th scope="col">Estado</th>
-                  </tr>
-                </thead>
-                <tbody id='tabla'>
-                </tbody>
-              </table>
-              
-</div>
-
-<script src="index.js"></script>
-
-</body>
-</html>
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <form id="form-autenticacion">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" name="email" value="" id="email">
+                                </div>
+                                <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="text" class="form-control" name="password" value="" id="password">
+                                </div>
+                                <input type="submit" name="" value="Validar">
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            <script src="js/autenticacion.js"></script>
+    </body>
+    </html>

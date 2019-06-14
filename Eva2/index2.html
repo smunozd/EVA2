@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<meta charset="UTF=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                
+<meta charset="UTF=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--Enlaces firestore-->
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+<!--fin enlaces firestore-->
+<title>Document</title>
+</head>
+<body>
+<!--Ejemplo 1-->
+<!-- <div class="row">
+        <form class="col s12"> -->
+<input type="text" placeholder="Nombre" id="Nombre"><br>
+<input type="text" placeholder="Categoria" id="Categoria"><br>
+<input type="text" placeholder="Tipo" id="Tipo"><br>
+<input type="text" placeholder="Plataforma" id="Plataforma"><br>
+<input type="text" placeholder="Descripcion" id="Descripcion"><br>
+<input type="text" placeholder="Ubicacion" id="Ubicacion"><br>
+<input type="text" placeholder="Estado" id="Estado"><br>
+<!-- </div> -->
+
+<button class="btn btn-info" id="botonSave" onclick="agregarDatos()">Guardar Datos</button><br>
+
+<div>
+        <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Plataforma</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Ubicacion</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody id='tabla'>
+                </tbody>
+              </table>
+              
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
