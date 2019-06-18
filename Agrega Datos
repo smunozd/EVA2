@@ -1,0 +1,34 @@
+function agregarDatos(){
+
+var Nombre=document.getElementById("Nombre").value;
+var Categoria=document.getElementById("Categoria").value;
+var Tipo=document.getElementById("Tipo").value;
+var Plataforma=document.getElementById("Plataforma").value;
+var Descripcion=document.getElementById("Descripcion").value;
+var Ubicacion=document.getElementById("Ubicacion").value;
+var Estado=document.getElementById("Estado").value;
+
+  db.collection("eva2").add({
+    Nombre: Nombre,
+    Categoria: Categoria,
+    Tipo: Tipo,
+    Plataforma: Plataforma,
+    Descripcion: Descripcion,
+    Ubicacion: Ubicacion,
+    Estado: Estado
+})
+.then(function(docRef) {
+    console.log("Document written with ID: ", docRef.id);
+    var Nombre=document.getElementById("Nombre").value='';
+var Categoria=document.getElementById("Categoria").value='';
+var Tipo=document.getElementById("Tipo").value='';
+var Plataforma=document.getElementById("Plataforma").value='';
+var Descripcion=document.getElementById("Descripcion").value='';
+var Ubicacion=document.getElementById("Ubicacion").value='';
+var Estado=document.getElementById("Estado").value='';
+location.reload();
+})
+.catch(function(error) {
+    console.error("Error adding document: ", error);
+});
+}//fin funcion
