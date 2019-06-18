@@ -1,0 +1,11 @@
+function verDatos(){
+       db.collection("eva2").get().then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                // doc.data() is never undefined for query doc snapshots
+console.log(doc.id, " => ",
+doc.data().Nombre +" - "+ doc.data().Categoria +" - "+ doc.data().Tipo+" - "
++ doc.data().Plataforma +" - "+ doc.data().Descripcion +" - "+ doc.data().Ubicacion +
+" - "+ doc.data().Estado);
+                         
+            })
+        })}//fin funcion
