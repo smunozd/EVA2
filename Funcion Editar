@@ -1,0 +1,32 @@
+function editar(id,Nombre,Categoria,Tipo,Plataforma,Descripcion,Ubicacion,Estado){
+    document.getElementById('Nombre').value= Nombre;
+    document.getElementById('Categoria').value= Categoria;
+    document.getElementById('Tipo').value= Tipo;
+    document.getElementById('Plataforma').value= Plataforma;
+    document.getElementById('Descripcion').value= Descripcion;
+    document.getElementById('Ubicacion').value= Ubicacion;
+    document.getElementById('Estado').value= Estado;
+    var boton= document.getElementById('botonSave');
+    boton.innerHTML='Editar';
+
+    boton.onclick = function(){
+
+
+    var washingtonRef = db.collection("eva2").doc(id);
+
+var Nombre=document.getElementById("Nombre").value;
+var Categoria=document.getElementById("Categoria").value;
+var Tipo=document.getElementById("Tipo").value;
+var Plataforma=document.getElementById("Plataforma").value;
+var Descripcion=document.getElementById("Descripcion").value;
+var Ubicacion=document.getElementById("Ubicacion").value;
+var Estado=document.getElementById("Estado").value;
+
+return washingtonRef.update({
+    Nombre: Nombre,
+    Categoria: Categoria,
+    Tipo: Tipo,
+    Plataforma: Plataforma,
+    Descripcion: Descripcion,
+    Ubicacion: Ubicacion,
+    Estado: Estado
