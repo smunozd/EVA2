@@ -1,0 +1,2 @@
+<button class="btn-floating btn-large red pulse" onclick="eliminar('${doc.id}')"><i class="material-icons">delete</i></button></td>
+  <td><button class="btn-floating btn-large orange" onclick="editar('${doc.id}','${doc.data().Nombre}','${doc.data().Categoria}','${doc.data().Tipo}','${doc.data().Plataforma}','${doc.data().Descripcion}','${doc.data().Ubicacion}','${doc.data().Estado}')"><i class="large material-icons">mode_edit</i></button></td>
